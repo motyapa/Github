@@ -1,4 +1,4 @@
-#Github 
+Github 
 
 These are files I've worked on throughout the years. Here you will find:
 
