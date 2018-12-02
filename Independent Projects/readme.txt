@@ -5,4 +5,4 @@ to determine whether or not a star has an exoplanet or not. Accuracy is around ~
 so my next step is to try it with a Neural Network.
 
 ExoPlanetsWithNN - Same Dataset as above, implemented with a Neural Network with 1 hidden layer,  
-w/ L2 Regularization. Accuracy seems to average around ~85%. Best run had an accuracy of 98.8%!
+w/ L2 Regularization. Best run had an accuracy of 99.1%!
