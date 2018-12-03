@@ -6,4 +6,6 @@ These are files I've worked on throughout the years. Here you will find:
 
 -Coursera Machine Learning : Self-explanatory. Code in Matlab. Before each project is a pdf that highlights which files I edited & which ones were given.
 
--Data Structres & Algorithm : UW CSE 373 course. In it are the projects we worked on.
+-Data Structres & Algorithms : UW CSE 373 course. In it are the projects we worked on.
+
+-Independent Projects: Stuff I did in my spare time
