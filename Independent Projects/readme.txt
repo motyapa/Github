@@ -11,3 +11,5 @@ all 570 stars do not have a planet :( - 565/570 = 99.1 (the accuracy)
 
 I now view this as practice implementing Logistic Regression, a Neural Network, Regularization,
 and testing Precision & Recall.
+
+Honey Production - Codecademy project. Predicting honey production by 2050 based on a Kaggle dataset.
