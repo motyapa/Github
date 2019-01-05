@@ -19,4 +19,5 @@ Breast Cancer - Codecademy project. Predicting whether a patient has breast canc
 Hockey vs Soccer - Codecademy project. Predicting whether an email is about hockey or soccer based on
 Bayesian theory.
 
+Handwriting - Codecademy project. Predicting what a number is based on an visual input
 
