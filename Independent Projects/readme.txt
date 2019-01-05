@@ -13,3 +13,5 @@ I now view this as practice implementing Logistic Regression, a Neural Network, 
 and testing Precision & Recall.
 
 Honey Production - Codecademy project. Predicting honey production by 2050 based on a Kaggle dataset.
+
+Breast Cancer - Codecademy project. Predicting whether a patient has breast cancer based on K 
