@@ -14,4 +14,9 @@ and testing Precision & Recall.
 
 Honey Production - Codecademy project. Predicting honey production by 2050 based on a Kaggle dataset.
 
-Breast Cancer - Codecademy project. Predicting whether a patient has breast cancer based on K 
+Breast Cancer - Codecademy project. Predicting whether a patient has breast cancer based on K Neighbors
+
+Hockey vs Soccer - Codecademy project. Predicting whether an email is about hockey or soccer based on
+Bayesian theory.
+
+
