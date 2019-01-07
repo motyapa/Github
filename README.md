@@ -1,5 +1,3 @@
-Github 
-
 These are files I've worked on throughout the years. Here you will find:
 
 -Cell Research : The overseeing professor gave me an algorithm to simulate a cancer cell's growth. This is my implementation of that algorithm in Java.
