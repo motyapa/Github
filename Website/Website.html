@@ -1,5 +1,48 @@
 <!DOCTYPE html>
 
+<style>
+	.thin-soft-black-border {
+		border-color: black;
+		border-width: 5px;
+		border-radius: 10%;
+	}
+
+	.thin-rough-black-border {
+		border-color:black;
+		border-width: 5px;
+		border-radius: 50%;
+	}
+
+	[name = 'link'] {
+		margin: 10px 0px 10px 0px;
+	}
+
+	.column {
+  		float: left;
+  		width: 30%;
+  		padding: 5px;
+	}
+
+	/* Clear floats after image containers */
+	.row::after {
+  		content: "";
+  		clear: both;
+  		display: table;
+	}
+
+	.crop {
+ 		height: 400px;
+		width: 400px;
+		overflow: hidden;
+	}
+
+	.crop img {
+ 		height: auto;
+ 		width: 400px;
+	}
+	
+</style>
+
 <html>
 	<head>
 		<title> Arthur Vartanyan's practice website </title>
@@ -16,28 +59,65 @@
 
 		<p> A natural question to ask about anyone: "Are you good looking?" Well the answer 
 
-		is <a href = "#selfie">Yes. Definitely Yes. </a></p>
+		is <a href="#Selfie">Yes. Definitely Yes. </a></p>
 
-		<p> You might be thinking, wow, you're so interesting - is there anyway I can learn more? Well don't fear,
-		check out <a href = "#Social">my social media!</a></p>
+		<p> "So you're good-looking, but do you have any substance to back this up?" Well, check out what I do in <a href = 
+		"#Hobbies">spare time</a></p>
 
-		<p> At this point you must be thinking - attractive and smart? Let us hire you! Well you're in luck, 
-		here's <a href = "#Resume">my resume </a></p>
+		<p> "Alright, you got something, a mysterious aura about you  - is there anyway I can learn more?" 
+		Well don't fear, check out <a href = "#Social">my social media!</a></p>
+
+		<p> At this point you must be thinking - attractive, dedicated, and smart? Let us hire you! Well you're in luck, 
+		here's <a href = "#Resume">my resume </a></p>	
 
 
 
+		<h2 id = "Selfie"> This handsome devil is me: </h2>
+		<img src = "Selfie.jpg" class="thin-soft-black-border">
 
 
 
-		<h2 id = "selfie"> This handsome devil is me: </h2>
-		<img src = "Selfie.jpg">
+		<h2 id = "Hobbies"> My extracurriculars: </h2>
 
-		<h2 id = "Social"> Social media links: </h2>
+		<div class = "row" style = "text-align: center">	
+	
+			<div class = "column">
+				<figure>
+					<a href = "https://lichess.org/@/motyapa"><img src = "Checkmate.jpg" class = "crop"></a>
+					<figcaption> I love to play chess, and am usually ranked in the top 5% of lichess players,
+					at any given point in time. My peak rating placed me in the top 2% of lichess players!
+					Picture above is me (white) suffocating my opponent's king. </figcaption>	
+				</figure>
+			</div>
+
+			<div class = "column">
+				<figure>	
+					<img src = "Dharma.jpg" class = "crop" style = "max-width:70%">
+					<figcaption> Reading is another one of my hobbies - The Dharma Bums being one of my most enjoyable 
+					reads as of late. I am currently tackling the behemoth known as Infinite Jest and hope to finish it
+					by the end of 2019 ;) </figcaption>
+				</figure>
+			</div>
+
+			<div class = "column">
+				<figure>	
+					<img src = "MuayThai.jpg" class = "crop" style = "max-width:60%">
+					<figcaption> I've been training Muay Thai Kickboxing under a world champion for 3 years now
+					and plan on being in my first amateur fight in the first half of 2019! If I kick like this
+					in my fight I might get knocked out - my left hand (the one not in the picture) isn't 
+					guarding my face. </figcaption>
+				</figure>
+			</div>
+		</div>
+
+
+		
+		<h2 id = "Social"> Social media links: </h2>		
 
 		<ul>
-			<li><a href = "https://www.facebook.com/arthur.vartanyan">Facebook</a></li>
-			<li><a href = "https://www.linkedin.com/in/arthur-vartanyan-b72946168/">LinkedIn</a></li>
-			<li><a href = "https://github.com/motyapa/Github">Github</a></li>
+			<li name = "link"><a href = "https://www.facebook.com/arthur.vartanyan">Facebook</a></li>
+			<li name = "link"><a href = "https://www.linkedin.com/in/arthur-vartanyan-b72946168/" id = "link">LinkedIn</a></li>
+			<li name = "link"><a href = "https://github.com/motyapa/Github" id = "link">Github</a></li>
 		</ul>
 
 		<h2 id = "Resume"> My credentials: </h2>
