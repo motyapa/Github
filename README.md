@@ -7,3 +7,5 @@ These are files I've worked on throughout the years. Here you will find:
 -Data Structres & Algorithms : UW CSE 373 course. In it are the projects we worked on.
 
 -Independent Projects: Stuff I did in my spare time
+
+-Website: Independent project where I design a website in HTML & CSS, just basic stuff about me - hobbies, social media accounts, etc.
