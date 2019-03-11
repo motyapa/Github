@@ -6,6 +6,6 @@ Hello, if you found this you're probably considering hiring me (or just stumbled
 
 -Data Structres & Algorithms : UW CSE 373 course. In it are the projects we worked on. All of these projects were done as duo projects with the same partner throughout the quarter. Some of them even built on each other. For instance, one project was implementing a HashTable & a DoubleLinkedList that we would use in future projects. (Final year of University)
 
--Independent Projects: Stuff I did in my spare time. (Post graduation)
+-Independent Projects: Stuff I did in my spare time. Includes ML projects, Unity projects, and random stuff. (Post graduation)
 
 -Website: Independent project where I design a website in HTML & CSS, just basic stuff about me - hobbies, social media accounts, etc. (Post graduation)
