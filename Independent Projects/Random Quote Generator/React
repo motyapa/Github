@@ -4,8 +4,7 @@ class App extends React.Component {
     this.state = {
       quotes: [
         {author: 'Roman saying', text: 'Victory or death'},
-        {author: 'Arthur Vartanyan', text: 'Eat a Dick'},
-        {author: 'Andrei Toader', text: "I'm gay"},
+        {author: 'Arthur Vartanyan', text: 'Hire me!'},
         {author: 'Alduous Huxley', text: 'I write books'}
       ],
       author: 'author',
