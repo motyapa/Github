@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.butt {
+  border: 1px solid black;
+  background-color: blue;
+  border-radius: 0px;
+}
+
+.container {
+  display: grid;
+  height: 200%;
+  width: 200%;
+  grid-template-columns: 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% 14.3% ;
+  grid-template-rows: 50% 50%;
+  margin-left: -47.5%;
+}
