@@ -10,6 +10,11 @@ this is mostly just me familiarizing myself with unity 2D and it's myraid of com
 So far I have implemented some basic physics, sprite animations that I found on opengameart.org, 
 and attempted to make it somewhat responsive.
 
+Stuff that definitely needs improving:
+-Implement parent class for player/enemies. A lot of them both have similar functions (EG Attack, Die, etc).
+-Lots of if/else statements. Will likely have to use a map of different attacks to their values.
+-Probably some ways to improve efficiency/pretty up the code that are not immediately obvious. 
+
 ---- Python projects ----
 
 Exoplanets - Using Data found on Kaggle.com, implemented Logistic Regression w/ Regularization 
