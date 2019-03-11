@@ -1,0 +1,58 @@
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      quotes: [
+        {author: 'Roman saying', text: 'Victory or death'},
+        {author: 'Arthur Vartanyan', text: 'Eat a Dick'},
+        {author: 'Andrei Toader', text: "I'm gay"},
+        {author: 'Alduous Huxley', text: 'I write books'}
+      ],
+      author: 'author',
+      text: 'quote',
+      number: -1
+    }
+    this.newQuote = this.newQuote.bind(this);
+    this.tweetQuote = this.tweetQuote.bind(this);
+  }
+    
+  componentDidMount() {
+    var random = Math.floor(Math.random() * this.state.quotes.length);
+    this.setState ({
+      text: "\"" + this.state.quotes[random].text + "\"",
+      author: this.state.quotes[random].author,
+      number: random
+    })   
+  }
+  
+  newQuote() {
+    var random = this.state.number;
+    while (random == this.state.number) {
+      random = Math.floor(Math.random() * this.state.quotes.length);
+    }
+    this.setState ({
+      text: "\"" + this.state.quotes[random].text + "\"",
+      author: this.state.quotes[random].author,
+      number: random
+    })    
+  }
+  
+  tweetQuote() {
+   window.open('https://twitter.com/intent/tweet?hashtags=quotes&text=' + this.state.text, "_blank") 
+  }
+  
+  render() {
+    return (
+        <div id='quote-box'>
+          <p id='text'>{this.state.text}</p>
+          <p id='author'>{this.state.author}</p>
+          <div id = 'buttons'>
+            <button class ='btn btn-primary' id='new-quote' onClick ={this.newQuote}>New Quote</button>
+            <button class = 'btn btn-primary' id = 'tweet-quote' onClick = {this.tweetQuote}>Tweet Quote</button>
+         </div>
+        </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("main"));
