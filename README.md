@@ -1,4 +1,4 @@
-These are files I've worked on throughout the years. Here you will find:
+Hello, if you found this you're probably considering hiring me (or just stumbled upon this, either way hello). To make it as easy as possible here's a breakdown of the files:
 
 -Cell Research : The overseeing professor gave me an algorithm to simulate a cancer cell's growth. This is my implementation of that algorithm in Java. (Second to last year of University)
 
