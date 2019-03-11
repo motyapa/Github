@@ -13,6 +13,7 @@ and attempted to make it somewhat responsive.
 Stuff that definitely needs improving:
 -Implement parent class for player/enemies. A lot of them both have similar functions (EG Attack, Die, etc).
 -Lots of if/else statements. Will likely have to use a map of different attacks to their values.
+-Research/Implement enemy combat AI.
 -Probably some ways to improve efficiency/pretty up the code that are not immediately obvious. 
 
 ---- Python projects ----
