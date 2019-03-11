@@ -1,120 +1,39 @@
 document.onkeydown = okd;
 document.onkeyup = oku;
 
+var delayTime = 50
 var keyCodes = [81, 87, 69, 82, 85, 73, 79]
-var codes = [
-  {int: 81, item: "item1", key: "Q"}
-]
+var codeMap = new Map();
+
+codeMap.set(81, ["#Q", "#item1"]);
+codeMap.set(87, ["#W", "#item2"]);
+codeMap.set(69, ["#E", "#item3"]);
+codeMap.set(82, ["#R", "#item4"]);
+codeMap.set(85, ["#U", "#item5"]);
+codeMap.set(73, ["#I", "#item6"]);
+codeMap.set(79, ["#O", "#item7"]);
 
 
 function okd(e) {
-  if (e.keyCode == 81) {
+  if ($.inArray(e.keyCode, keyCodes) >= -1) {
     
-    $("#item1").css('background-color', 'red'); 
-    $("#Q").prop('volume', 1);
-    $("#Q").trigger('play');  
+    $(codeMap.get(e.keyCode)[1]).css('background-color', 'red'); 
+    $(codeMap.get(e.keyCode)[0]).prop('volume', 1);
+    $(codeMap.get(e.keyCode)[0]).trigger('play'); 
     
-  } else if (e.keyCode == 87) {
-    
-    $("#item2").css('background-color', 'red'); 
-    $("#W").prop('volume', 1);
-    $("#W").trigger('play');
-    
-  } else if (e.keyCode == 69) {
-    
-    $("#item3").css('background-color', 'red'); 
-    $("#E").prop('volume', 1);
-    $("#E").trigger('play');
-    
-  } else if (e.keyCode == 82) {
-    
-    $("#item4").css('background-color', 'red'); 
-    $("#R").prop('volume', 1);
-    $("#R").trigger('play');
-    
-  }  else if (e.keyCode == 85) {
-    
-    $("#item5").css('background-color', 'red'); 
-    $("#U").prop('volume', 1);
-    $("#U").trigger('play');
-    
-  }  else if (e.keyCode == 73) {
-    
-    $("#item6").css('background-color', 'red'); 
-    $("#I").prop('volume', 1);
-    $("#I").trigger('play');
-    
-  }  else if (e.keyCode == 79) {
-    
-    $("#item7").css('background-color', 'red'); 
-    $("#O").prop('volume', 1);
-    $("#O").trigger('play');
-    
-  }              
+  }  
 }
 
 function oku(e) {
-  if (e.keyCode == 81) {
-    $("#item1").css('background-color', 'blue');  
-    $('#Q').animate({volume: 0}, 20);
+  if ($.inArray(e.keyCode, keyCodes) >= -1) {
+    
+    $(codeMap.get(e.keyCode)[1]).css('background-color', 'blue');  
+    $(codeMap.get(e.keyCode)[0]).animate({volume: 0}, delayTime);
     setTimeout(function () {       
-      $("#Q").trigger('pause');
-      $("#Q").prop("currentTime", 0);               
-    }, 20);
-    
-  } else if (e.keyCode == 87) {
-    
-    $("#item2").css('background-color', 'blue');  
-    $('#W').animate({volume: 0}, 20);
-    setTimeout(function () {       
-      $("#W").trigger('pause');
-      $("#W").prop("currentTime", 0);               
-    }, 20); 
-    
-  } else if (e.keyCode == 69) {
-    
-    $("#item3").css('background-color', 'blue');  
-    $('#E').animate({volume: 0}, 20);
-    setTimeout(function () {       
-      $("#E").trigger('pause');
-      $("#E").prop("currentTime", 0);               
-    }, 20); 
-    
-  } else if (e.keyCode == 82) {
-    
-    $("#item4").css('background-color', 'blue');  
-    $('#R').animate({volume: 0}, 20);
-    setTimeout(function () {       
-      $("#R").trigger('pause');
-      $("#R").prop("currentTime", 0);               
-    }, 20); 
-    
-  } else if (e.keyCode == 85) {
-    
-    $("#item5").css('background-color', 'blue');  
-    $('#U').animate({volume: 0}, 20);
-    setTimeout(function () {       
-      $("#U").trigger('pause');
-      $("#U").prop("currentTime", 0);               
-    }, 20); 
-    
-  } else if (e.keyCode == 73) {
-    
-    $("#item6").css('background-color', 'blue');  
-    $('#I').animate({volume: 0}, 20);
-    setTimeout(function () {       
-      $("#I").trigger('pause');
-      $("#I").prop("currentTime", 0);               
-    }, 20); 
-    
-  } else if (e.keyCode == 79) {
-    
-    $("#item7").css('background-color', 'blue');  
-    $('#O').animate({volume: 0}, 20);
-    setTimeout(function () {       
-      $("#O").trigger('pause');
-      $("#O").prop("currentTime", 0);               
-    }, 20); 
+      $(codeMap.get(e.keyCode)[0]).trigger('pause');
+      $(codeMap.get(e.keyCode)[0]).prop("currentTime", 0);               
+    }, delayTime);
     
   }
 }
+
