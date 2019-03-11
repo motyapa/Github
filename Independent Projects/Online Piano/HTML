@@ -1,0 +1,42 @@
+<body>
+  <div>
+    <div class='container'>
+        <button id='item1' class = 'butt btn btn-primary'> Q </button>
+        <button id='item2' class = 'butt btn btn-primary'> W </button>
+        <button id='item3' class = 'butt btn btn-primary'> E </button>
+        <button id='item4' class = 'butt btn btn-primary'> R </button>
+        <button id='item5' class = 'butt btn btn-primary'> U </button>
+        <button id='item6' class = 'butt btn btn-primary'> I </button>
+        <button id='item7' class = 'butt btn btn-primary'> O </button>
+      </div>
+  </div>
+  
+  <audio id="Q" controls style="display:none">
+  <source src="https://res.cloudinary.com/dwm2wnmeb/video/upload/v1551223790/68437__pinkyfinger__piano-a.wav" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+  
+  <audio id="W" controls style="display:none">
+  <source src="https://res.cloudinary.com/dwm2wnmeb/video/upload/v1551223790/68438__pinkyfinger__piano-b.wav" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+  
+  <audio id="E" controls style="display:none">
+  <source src="https://res.cloudinary.com/dwm2wnmeb/video/upload/v1551223790/68440__pinkyfinger__piano-c.wav" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+  
+  <audio id="R" controls style="display:none">
+  <source src="https://res.cloudinary.com/dwm2wnmeb/video/upload/v1551223790/68442__pinkyfinger__piano-d.wav" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+  
+  <audio id="U" controls style="display:none">
+  <source src="https://res.cloudinary.com/dwm2wnmeb/video/upload/v1551223791/68443__pinkyfinger__piano-e.wav" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+  
+  <audio id="I" controls style="display:none">
+  <source src="https://res.cloudinary.com/dwm2wnmeb/video/upload/v1551223791/68445__pinkyfinger__piano-f.wav" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+  
+  <audio id="O" controls style="display:none">
+  <source src="https://res.cloudinary.com/dwm2wnmeb/video/upload/v1551223792/68448__pinkyfinger__piano-g.wav" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+  
+</body>
