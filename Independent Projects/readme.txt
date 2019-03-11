@@ -2,6 +2,9 @@ Stuff that's not related to school/research
 
 ---- Unity projects ----
 
+Roll a ball 3D - Basic Unity project I made following tutorials. Roll a ball around in a 3d plane,
+collecting coins.
+
 
 ---- Python projects ----
 
