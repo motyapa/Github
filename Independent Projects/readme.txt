@@ -23,3 +23,7 @@ Bayesian theory.
 
 Handwriting - Codecademy project. Predicting what a number is based on an visual input
 
+---- Other Projects ----
+
+Random Quote Generator - Implemented using React/HTML/CSS. Not super pretty but I'm satisfied with the functionality. 
+Also has the option to tweet quotes.
