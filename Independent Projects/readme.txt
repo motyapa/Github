@@ -6,7 +6,7 @@ Roll a ball 3D - Basic Unity project I made following tutorials. Roll a ball aro
 collecting coins.
 
 Fighting game practice - 2D fighting game that I am messing around with. I'm sure the code is sloppy,
-this is mostly just me familiarizing myself with unity 2D and it's myraid of commands. 
+this is mostly just me familiarizing myself with unity 2D and it's myraid of commands. Focused on scriping at the moment.
 So far I have implemented some basic physics, sprite animations that I found on opengameart.org, 
 and attempted to make it somewhat responsive.
 
