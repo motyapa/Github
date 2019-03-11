@@ -32,4 +32,4 @@ Online Piano - Implemented using jQuery/HTML/CSS. User presses buttons Q/W/E/R/U
 -Only works with keyboard presses. At some point I should implement on-click functionality.
 -Animate/prop time is 50ms. May change, this is purely a design choice. I want it to sound natural so if it's too low then the sound cuts out after user takes their finger off button, however a piano has reverb. If it's too long then users who play too fast will experience issues. Have to find a good middle ground. To see what I mean, try changing the delayTime variable to something like 500 and pressing Q really fast.
 
-See: https://codepen.io/arthur-vartanyan/pen/BbwzjG
+See: https://codepen.io/arthur-vartanyan/pen/gEbZPW
