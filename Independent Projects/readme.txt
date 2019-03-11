@@ -1,5 +1,8 @@
 Stuff that's not related to school/research
 
+---- Unity projects ----
+
+
 ---- Python projects ----
 
 Exoplanets - Using Data found on Kaggle.com, implemented Logistic Regression w/ Regularization 
