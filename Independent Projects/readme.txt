@@ -53,6 +53,10 @@ Online Piano - Implemented using jQuery/HTML/CSS. User presses buttons Q/W/E/R/U
 
 See: https://codepen.io/arthur-vartanyan/pen/gEbZPW
 
+Mancala - Implemented using React/HTML/CSS. Two-person Mancala game.
+
+See: https://codepen.io/arthur-vartanyan/full/EMGepb
+
 Timestamp Microservice - Really basic back-end project.
 
 See: https://torch-cellar.glitch.me/
