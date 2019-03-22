@@ -53,7 +53,7 @@ Online Piano - Implemented using jQuery/HTML/CSS. User presses buttons Q/W/E/R/U
 
 See: https://codepen.io/arthur-vartanyan/pen/gEbZPW
 
-Mancala - Implemented using React/HTML/CSS. Two-person Mancala game. At some point I would like to add a "forward turn" button to compliment the undo button.
+Mancala - Implemented using jQuery/HTML/CSS. Two-person Mancala game. At some point I would like to add a "forward turn" button to compliment the undo button.
 
 See: https://codepen.io/arthur-vartanyan/full/EMGepb
 
