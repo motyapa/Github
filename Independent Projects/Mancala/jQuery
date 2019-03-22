@@ -1,0 +1,177 @@
+var player1turn = true;
+var player2turn = false;
+var turnSwap = true;
+var gameOver = false;
+var turn = 0;
+
+var count = [0, 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4];
+
+var data = count.slice();
+
+data.push(player1turn);
+data.push(player2turn);
+data.push(turnSwap);
+data.push(gameOver);
+
+var turnMap = new Map();
+
+turnMap.set(turn, data);
+
+$(function() {
+  counter(); 
+});
+
+$(".btn").click(function() {
+  var id = $(this).attr('id');
+  $(this).css("box-shadow", "none");
+  var numString = id.substring(3);
+  var num = parseInt(numString);
+  
+  if (!gameOver) {
+    move(num);
+    checkIfGameOver();
+  } else {
+    $("#debug").text("Start a new game!");
+  }
+});
+
+$("#reset").click(function() {
+  reset();
+});
+
+$("#undo").click(function() {
+  undo();
+});
+
+var move = function(num) {
+  if (player1turn && num > 6) {
+    $("#debug").text("Player 1 must choose a box in the top row!");
+  } else if (player2turn && num < 8){
+    $("#debug").text("Player 2 must choose a box in the bottom row!");
+  } else if (count[num] === 0) {
+    $("#debug").text("Pick a square with 1 or more stones!");
+  } else {
+  
+    var val = count[num];
+    count[num] = 0;
+
+    while (val > 0) {
+      num++;
+      
+      if (num === 14) {
+        num = 0;
+      }
+      
+      if (player1turn && num == 0) {
+        num++;
+      }
+      
+      if (player2turn && num == 7) {
+        num++;
+      }
+      
+      count[num]++;
+      val--;
+    }
+    
+    if (player1turn) {
+      if (num === 7) {
+        turnSwap = false;
+      } else if (num < 7 && count[num] === 1) {
+        count[num] = 0;
+        count[7] += 1 + count[14 - num];
+        count[14 - num] = 0;
+      }
+    } else if (player2turn) {
+      if (num === 0) {
+        turnSwap = false;
+      } else if (num > 7 && count[num] === 1) {
+        count[num] = 0;
+        count[0] += 1 + count[14 - num];
+        count[14 - num] = 0;
+      }
+    }
+    
+    if (turnSwap) {
+      player1turn = !player1turn;
+      player2turn = !player2turn;
+    }  
+    
+    var newData = count.slice();
+    
+    newData.push(player1turn);
+    newData.push(player2turn);
+    newData.push(turnSwap);
+    newData.push(gameOver);
+    
+    turn++;
+    turnMap.set(turn, newData);
+    counter();
+  }
+}
+
+var counter = function() {
+  for (i = 0; i < count.length; i++) {
+    $("#box" + i).text(count[i]);
+  }
+  if (player1turn) {
+    $("#debug").text("Move: Player 1 - Top Row");
+  } else {
+    $("#debug").text("Move: Player 2 - Bottom Row");
+  }
+  turnSwap = true;
+};
+
+var reset = function() {  
+  turn = 0;
+  count = turnMap.get(0);
+  turnMap.set(turn, count.slice(0));
+  player1turn = true;
+  player2turn = false;
+  turnSwap = true;
+  gameOver = false;
+  counter();
+  
+}
+
+var undo = function() {
+  turn--;
+  var undoData = turnMap.get(turn);
+  count = undoData.slice(0, 14);
+  player1turn = undoData[14];
+  player2turn = undoData[15];
+  turnSwap = undoData[16];
+  gameOver = undoData[17];
+  counter();
+}
+
+var checkIfGameOver = function() {
+  var flag1 = true;
+  for (i = 1; i < 7; i++) {
+    if (count[i] != 0) {
+      flag1 = false;
+      break;
+    }
+  }
+  var flag2 = true;
+  for (i = 8; i < 14; i++) {
+    if (count[i] != 0) {
+      flag2 = false;
+      break;
+    }
+  }
+  if (flag1 || flag2) {
+    gameOver = true;
+    if (count[7] > count[0]) {
+      $("#debug").text("Move: Player 1 Wins!");
+    } else if (count[0] > count[7]) {
+      $("#debug").text("Move: Player 2 Wins!");
+    } else {
+      $("#debug").text("It's a tie!");
+    }
+  }
+}
+
+
+
+
