@@ -55,7 +55,7 @@ See: https://codepen.io/arthur-vartanyan/pen/gEbZPW
 
 Mancala - Implemented using jQuery/HTML/CSS. Two-person Mancala game. At some point I would like to add a "forward turn" button to compliment the undo button.
 
-See: https://codepen.io/arthur-vartanyan/full/EMGepb
+See: https://codepen.io/arthur-vartanyan/pen/LaMJXB
 
 Timestamp Microservice - Really basic back-end project.
 
